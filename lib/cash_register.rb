@@ -10,13 +10,12 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-    if quantity == 1 
-      @items.push(item)
-    else
-      counter = 0
+    if quantity > 1 
+      counter = 0 
       while counter < quantity
-        
       end
+    else 
+      @items.push(item)
     end
     @total += (price * quantity)
   end
