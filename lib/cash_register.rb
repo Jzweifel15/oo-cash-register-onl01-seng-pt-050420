@@ -13,7 +13,10 @@ class CashRegister
     if quantity == 1 
       @items.push(item)
     else
-      
+      counter = 0
+      while counter < quantity
+        
+      end
     end
     @total += (price * quantity)
   end
