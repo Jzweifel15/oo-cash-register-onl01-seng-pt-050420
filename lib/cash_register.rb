@@ -13,6 +13,8 @@ class CashRegister
     if quantity > 1 
       counter = 0 
       while counter < quantity
+        @items.push(item)
+        counter += 1
       end
     else 
       @items.push(item)
